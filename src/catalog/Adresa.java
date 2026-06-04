@@ -1,6 +1,7 @@
 package catalog;
 
 public class Adresa {
+    private int id; // Adaugat pentru DB
     private String oras;
     private String strada;
 
@@ -9,6 +10,8 @@ public class Adresa {
         this.strada = strada;
     }
 
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
     public String getOras() { return oras; }
     public void setOras(String oras) { this.oras = oras; }
     public String getStrada() { return strada; }
